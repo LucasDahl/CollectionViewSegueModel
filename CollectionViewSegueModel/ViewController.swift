@@ -14,13 +14,21 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var arrayModels = [Model]()
     var muir = Model(name: "muir", image: "1", id: "A")
     var muirTwo = Model(name: "muirTwo", image: "2", id: "B")
+    var feet = Model(name: "Feet", image: "3", id: "C")
+    var fruit = Model(name: "Fruit", image: "4", id: "D")
+    var road = Model(name: "Road", image: "5", id: "E")
+    var city = Model(name: "City", image: "6", id: "F")
+    var crowd = Model(name: "Crowd", image: "7", id: "G")
+    var falls = Model(name: "Falls", image: "8", id: "H")
+    var rocks = Model(name: "Rocks", image: "9", id: "I")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        arrayModels.append(muir)
-        arrayModels.append(muirTwo)
+//        arrayModels.append(muir)
+//        arrayModels.append(muirTwo)
+        arrayModels += ([muir, muirTwo, feet, fruit, road, city, crowd, falls, rocks])
         
     }
 
@@ -43,6 +51,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Set the label
         let textLabel = cell.viewWithTag(2) as! UILabel
         textLabel.text = arrayModels[indexPath.row].displayName!
+        
+        // TODO: - Add a popup vc for a description
         
         // Return the cell
         return cell
@@ -70,8 +80,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //            let width = collectionView.frame.size.width
 //            let xInsets: CGFloat = 10
 //            let cellSpacing: CGFloat = 5
-//            let image = arrayOfImages[indexPath.item]
-//            let height = image.size.height
+//            let image = UIImage(named: arrayModels[indexPath.row].displayImage!)
+//            let height = image!.size.height
 //    
 //            return CGSize(width: (width / numberOfColumns) - (xInsets + cellSpacing), height: height)
 //        }

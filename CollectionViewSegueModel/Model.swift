@@ -11,10 +11,13 @@ import Foundation
 
 class Model {
     
+    // Properties
     var displayName:String?
     var displayImage:String?
     var idVc:String?
+    var modelDescirption:String?
     
+    // Initializer for the class
     init(name:String, image:String, id:String) {
         
         displayName = name
