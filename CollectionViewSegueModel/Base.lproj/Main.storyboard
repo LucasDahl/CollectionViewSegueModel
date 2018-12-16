@@ -18,11 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Qvt-md-Q7i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VZK-LJ-C6C">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hL4-pv-KTh">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="12.5" id="hL4-pv-KTh">
                                     <size key="itemSize" width="175" height="175"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -69,7 +72,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qvt-md-Q7i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="12p-mv-8gh"/>
                             <constraint firstItem="VZK-LJ-C6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DUg-LU-bMW"/>
+                            <constraint firstAttribute="trailing" secondItem="Qvt-md-Q7i" secondAttribute="trailing" id="HAy-w4-Roc"/>
+                            <constraint firstAttribute="bottom" secondItem="Qvt-md-Q7i" secondAttribute="bottom" id="dcT-mf-LqL"/>
+                            <constraint firstItem="Qvt-md-Q7i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dww-tI-SJh"/>
                             <constraint firstItem="VZK-LJ-C6C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="q4m-Fp-1N5"/>
                             <constraint firstItem="VZK-LJ-C6C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sMw-hm-GLM"/>
                             <constraint firstItem="VZK-LJ-C6C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ycP-Qp-2rd"/>
@@ -308,6 +315,35 @@
             <point key="canvasLocation" x="4257" y="508"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="9XN-sa-laR">
+            <objects>
+                <viewController storyboardIdentifier="market" id="9f5-yv-vhe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Zf-BE-U0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-15-K8q">
+                                <rect key="frame" x="160" y="323" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sRe-15-K8q" firstAttribute="top" secondItem="jkJ-dq-GOX" secondAttribute="top" constant="303" id="0nL-YT-lJu"/>
+                            <constraint firstItem="jkJ-dq-GOX" firstAttribute="bottom" secondItem="sRe-15-K8q" secondAttribute="bottom" constant="323" id="NsX-9E-C9q"/>
+                            <constraint firstItem="jkJ-dq-GOX" firstAttribute="trailing" secondItem="sRe-15-K8q" secondAttribute="trailing" constant="161" id="pVW-VB-fTw"/>
+                            <constraint firstItem="sRe-15-K8q" firstAttribute="leading" secondItem="jkJ-dq-GOX" secondAttribute="leading" constant="160" id="qdt-t2-ZTH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jkJ-dq-GOX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imK-jt-b7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5006" y="508"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Dp6-SE-5BW">
             <objects>
                 <viewController storyboardIdentifier="crowd" id="y5r-9K-zmV" sceneMemberID="viewController">
@@ -363,7 +399,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fl-WK-6Ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5039" y="92"/>
+            <point key="canvasLocation" x="5006" y="-197"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+    </resources>
 </document>

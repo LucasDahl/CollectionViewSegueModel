@@ -21,14 +21,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var crowd = Model(name: "Crowd", image: "7", id: "crowd")
     var falls = Model(name: "Falls", image: "8", id: "falls")
     var rocks = Model(name: "Rocks", image: "9", id: "rocks")
+    var market = Model(name: "Market", image: "10", id: "market")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        arrayModels.append(muir)
-//        arrayModels.append(muirTwo)
-        arrayModels += ([muir, muirTwo, feet, fruit, road, city, crowd, falls, rocks])
+        // Set up the array
+        arrayModels += ([muir, muirTwo, feet, fruit, road, city, crowd, falls, rocks, market])
         
     }
 
