@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="116" width="368" height="551"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="0.0" maxY="10"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UyU-3o-wQF">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,27 +37,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ijl-uG-a79">
-                                                    <rect key="frame" x="0.0" y="0.0" width="119" height="75"/>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijl-uG-a79">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chB-bh-kyj">
-                                                    <rect key="frame" x="0.0" y="77" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chB-bh-kyj">
+                                                    <rect key="frame" x="20" y="70" width="50" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="chB-bh-kyj" firstAttribute="leading" secondItem="s55-zd-gZz" secondAttribute="leading" id="1yf-pA-zt7"/>
-                                            <constraint firstAttribute="bottom" secondItem="chB-bh-kyj" secondAttribute="bottom" constant="11" id="9SV-K1-fGW"/>
-                                            <constraint firstItem="Ijl-uG-a79" firstAttribute="top" secondItem="s55-zd-gZz" secondAttribute="top" id="9aY-cy-Wxa"/>
-                                            <constraint firstItem="chB-bh-kyj" firstAttribute="top" secondItem="Ijl-uG-a79" secondAttribute="bottom" constant="2" id="HZM-Rj-gSs"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ijl-uG-a79" secondAttribute="trailing" id="TW8-Bq-EB7"/>
-                                            <constraint firstAttribute="trailing" secondItem="chB-bh-kyj" secondAttribute="trailing" constant="77" id="Up9-UI-ceu"/>
-                                            <constraint firstItem="Ijl-uG-a79" firstAttribute="leading" secondItem="s55-zd-gZz" secondAttribute="leading" id="t3h-XZ-zZ5"/>
-                                            <constraint firstItem="chB-bh-kyj" firstAttribute="top" secondItem="Ijl-uG-a79" secondAttribute="bottom" constant="2" id="uOP-Wg-Knd"/>
-                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>

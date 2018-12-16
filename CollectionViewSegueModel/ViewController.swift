@@ -11,14 +11,16 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     // Properties
-    var arrayOfImages = [UIImage]()
-    var arrayOfIDs = [String]()
+    var arrayModels = [Model]()
+    var muir = Model(name: "muir", image: "1", id: "A")
+    var muirTwo = Model(name: "muirTwo", image: "2", id: "B")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayOfImages = [#imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "2")]
-        arrayOfIDs = ["A", "B"]
+        
+        arrayModels.append(muir)
+        arrayModels.append(muirTwo)
         
     }
 
@@ -36,7 +38,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Set the imageView
         let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = arrayOfImages[indexPath.row]
+        imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage!)
+        
+        // Set the label
+        let textLabel = cell.viewWithTag(2) as! UILabel
+        textLabel.text = arrayModels[indexPath.row].displayName!
         
         // Return the cell
         return cell
@@ -47,10 +53,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         // Get The name of the selected cell
-        let name = arrayOfIDs[indexPath.row]
+        let name = arrayModels[indexPath.row].idVc
         
         // Get the ViewController
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name!)
         
         // push the viewContoller
         self.navigationController?.pushViewController(viewController!, animated: true)
