@@ -12,15 +12,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Properties
     var arrayModels = [Model]()
-    var muir = Model(name: "muir", image: "1", id: "A")
-    var muirTwo = Model(name: "muirTwo", image: "2", id: "B")
-    var feet = Model(name: "Feet", image: "3", id: "C")
-    var fruit = Model(name: "Fruit", image: "4", id: "D")
-    var road = Model(name: "Road", image: "5", id: "E")
-    var city = Model(name: "City", image: "6", id: "F")
-    var crowd = Model(name: "Crowd", image: "7", id: "G")
-    var falls = Model(name: "Falls", image: "8", id: "H")
-    var rocks = Model(name: "Rocks", image: "9", id: "I")
+    var muir = Model(name: "muir", image: "1", id: "muir")
+    var muirTwo = Model(name: "muirTwo", image: "2", id: "muirTwo")
+    var feet = Model(name: "Feet", image: "3", id: "feet")
+    var fruit = Model(name: "Fruit", image: "4", id: "fruit")
+    var road = Model(name: "Road", image: "5", id: "road")
+    var city = Model(name: "City", image: "6", id: "city")
+    var crowd = Model(name: "Crowd", image: "7", id: "crowd")
+    var falls = Model(name: "Falls", image: "8", id: "falls")
+    var rocks = Model(name: "Rocks", image: "9", id: "rocks")
 
     override func viewDidLoad() {
         super.viewDidLoad()
