@@ -12,16 +12,16 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Properties
     var arrayModels = [Model]()
-    var muir = Model(name: "muir", image: "1", id: "muir")
-    var muirTwo = Model(name: "muirTwo", image: "2", id: "muirTwo")
-    var feet = Model(name: "Feet", image: "3", id: "feet")
-    var fruit = Model(name: "Fruit", image: "4", id: "fruit")
-    var road = Model(name: "Road", image: "5", id: "road")
-    var city = Model(name: "City", image: "6", id: "city")
-    var crowd = Model(name: "Crowd", image: "7", id: "crowd")
-    var falls = Model(name: "Falls", image: "8", id: "falls")
-    var rocks = Model(name: "Rocks", image: "9", id: "rocks")
-    var market = Model(name: "Market", image: "10", id: "market")
+    var muir = Model(name: "Muir", image: "1", id: "muir", description: "Mountain")
+    var muirTwo = Model(name: "MuirTwo", image: "2", id: "muirTwo", description: "YASS QUEEN")
+    var feet = Model(name: "Feet", image: "3", id: "feet", description: "Ew")
+    var fruit = Model(name: "Fruit", image: "4", id: "fruit", description: "YUMMY!")
+    var road = Model(name: "Road", image: "5", id: "road", description: "Take me home")
+    var city = Model(name: "City", image: "6", id: "city", description: "To many people!")
+    var crowd = Model(name: "Crowd", image: "7", id: "crowd", description: "WHY ARE THERE SO MANY PEOPLE")
+    var falls = Model(name: "Falls", image: "8", id: "falls", description: "Seen one seen them all")
+    var rocks = Model(name: "Rocks", image: "9", id: "rocks", description: "Stuck between")
+    var market = Model(name: "Market", image: "10", id: "market", description: "This little piggy")
 
     override func viewDidLoad() {
         super.viewDidLoad()

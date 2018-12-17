@@ -18,11 +18,12 @@ class Model {
     var modelDescirption:String?
     
     // Initializer for the class
-    init(name:String, image:String, id:String) {
+    init(name:String, image:String, id:String, description:String) {
         
         displayName = name
         displayImage = image
         idVc = id
+        modelDescirption = description
         
     }
     
