@@ -10,7 +10,15 @@ import UIKit
 
 class ModelCell: UICollectionViewCell {
     
+    var desc:String?
     
-    @IBOutlet weak var descriptionTapped: UIButton!
+    
+    @IBAction func descriptionTapped(_ sender: UIButton) {
+        
+        // Print the description
+        print(desc)
+        
+    }
+    
     
 }

@@ -54,8 +54,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let textLabel = cell.viewWithTag(2) as! UILabel
         textLabel.text = arrayModels[indexPath.row].displayName!
         
+        // Gets the description from the model
+        cell.desc = arrayModels[indexPath.row].modelDescirption
+        
         // TODO: - Add a popup vc for a description
-        cell.descriptionTapped.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        
         
         // Return the cell
         return cell
@@ -76,9 +79,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    @objc func buttonPressed() {
-        print("buttonPressed !")
-    }
+//    @objc func buttonPressed(sender: UIButton) {
+//        print("buttonPressed !")
+//    }
     
 //        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //    
