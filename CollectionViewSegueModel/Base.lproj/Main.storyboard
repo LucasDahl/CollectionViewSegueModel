@@ -83,7 +83,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Feed" id="iaC-G9-x05"/>
+                    <navigationItem key="navigationItem" title="Feed" id="iaC-G9-x05">
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="XNy-Qi-NnK">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="qzM-bt-Moa" kind="show" id="Mpx-SM-L4W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +124,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciV-Oj-er1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1871" y="508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sda-5U-S4R">
+            <objects>
+                <viewController id="qzM-bt-Moa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzF-Ot-Mtz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUC-Q0-VyT">
+                                <rect key="frame" x="155" y="323" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x4X-1c-ptA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1g-Wp-IAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-570"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="agh-5p-Bm8">
@@ -404,5 +435,6 @@
     </scenes>
     <resources>
         <image name="background" width="640" height="1136"/>
+        <image name="settings" width="37.5" height="37.5"/>
     </resources>
 </document>
