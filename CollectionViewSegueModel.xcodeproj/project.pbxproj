@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9504C1D921C851FD00A4AC40 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9504C1D821C851FD00A4AC40 /* DescriptionViewController.swift */; };
 		951BD8EE21C5B02E003790FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BD8ED21C5B02E003790FF /* AppDelegate.swift */; };
 		951BD8F021C5B02E003790FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BD8EF21C5B02E003790FF /* ViewController.swift */; };
 		951BD8F321C5B02E003790FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BD8F121C5B02E003790FF /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9504C1D821C851FD00A4AC40 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		951BD8EA21C5B02E003790FF /* CollectionViewSegueModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewSegueModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		951BD8ED21C5B02E003790FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		951BD8EF21C5B02E003790FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				951BD8ED21C5B02E003790FF /* AppDelegate.swift */,
 				951BD8EF21C5B02E003790FF /* ViewController.swift */,
+				9504C1D821C851FD00A4AC40 /* DescriptionViewController.swift */,
 				951FDF0021C75BA60021F71C /* ModelCell.swift */,
 				955881C021C614DB00726796 /* Model.swift */,
 				951BD8F121C5B02E003790FF /* Main.storyboard */,
@@ -144,6 +147,7 @@
 				955881C121C614DB00726796 /* Model.swift in Sources */,
 				951BD8F021C5B02E003790FF /* ViewController.swift in Sources */,
 				951BD8EE21C5B02E003790FF /* AppDelegate.swift in Sources */,
+				9504C1D921C851FD00A4AC40 /* DescriptionViewController.swift in Sources */,
 				951FDF0121C75BA60021F71C /* ModelCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

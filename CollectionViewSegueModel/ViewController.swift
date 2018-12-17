@@ -78,8 +78,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
-    
-
 
 }
 
