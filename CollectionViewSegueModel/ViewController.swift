@@ -79,22 +79,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-//    @objc func buttonPressed(sender: UIButton) {
-//        print("buttonPressed !")
-//    }
-    
-//        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//    
-//            //Set up the grid
-//            let numberOfColumns: CGFloat = 2 // Chnage this fto change the number of columns displayed
-//            let width = collectionView.frame.size.width
-//            let xInsets: CGFloat = 10
-//            let cellSpacing: CGFloat = 5
-//            let image = UIImage(named: arrayModels[indexPath.row].displayImage!)
-//            let height = image!.size.height
-//    
-//            return CGSize(width: (width / numberOfColumns) - (xInsets + cellSpacing), height: height)
-//        }
+
 
 }
 
