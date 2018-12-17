@@ -49,7 +49,7 @@
                                                     <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acd-34-Eou">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="button" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acd-34-Eou">
                                                     <rect key="frame" x="154" y="149" width="21" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="hYh-ZB-EYL"/>
@@ -73,6 +73,9 @@
                                             <constraint firstAttribute="bottom" secondItem="acd-34-Eou" secondAttribute="bottom" constant="5" id="wc8-fF-B45"/>
                                             <constraint firstItem="Ijl-uG-a79" firstAttribute="top" secondItem="s55-zd-gZz" secondAttribute="top" id="zIx-IM-6yM"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="descriptionTapped" destination="acd-34-Eou" id="8tl-zb-EQb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

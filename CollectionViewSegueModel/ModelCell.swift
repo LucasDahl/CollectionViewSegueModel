@@ -10,4 +10,7 @@ import UIKit
 
 class ModelCell: UICollectionViewCell {
     
+    
+    @IBOutlet weak var descriptionTapped: UIButton!
+    
 }

@@ -55,6 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         textLabel.text = arrayModels[indexPath.row].displayName!
         
         // TODO: - Add a popup vc for a description
+        cell.descriptionTapped.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         
         // Return the cell
         return cell
@@ -73,6 +74,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // push the viewContoller
         self.navigationController?.pushViewController(viewController!, animated: true)
         
+    }
+    
+    @objc func buttonPressed() {
+        print("buttonPressed !")
     }
     
 //        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
