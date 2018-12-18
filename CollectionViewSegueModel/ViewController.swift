@@ -81,3 +81,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
 }
 
+extension ViewController: DescriptionViewControllerprotocol {
+    
+    func descriptionViewDismissed() {
+        <#code#>
+    }
+    
+}
