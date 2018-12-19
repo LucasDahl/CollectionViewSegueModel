@@ -57,7 +57,7 @@
                                                     </constraints>
                                                     <state key="normal" image="3dot"/>
                                                     <connections>
-                                                        <action selector="descriptionTapped:" destination="s55-zd-gZz" eventType="touchUpInside" id="bUC-MJ-gXB"/>
+                                                        <action selector="testTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABc-yg-Yb1"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -113,7 +113,7 @@
         <!--Description View Controller-->
         <scene sceneID="Nm6-l0-o12">
             <objects>
-                <viewController id="q4p-fq-ild" customClass="DescriptionViewController" customModule="CollectionViewSegueModel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="desc" id="q4p-fq-ild" customClass="DescriptionViewController" customModule="CollectionViewSegueModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Rm-IJ-4dl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

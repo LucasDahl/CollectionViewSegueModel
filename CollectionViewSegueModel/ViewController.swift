@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, DescriptionViewControllerprotocol {
+    
+    // Protocol Properties
+    var titleText: String = ""
+    var descriptionText: String = ""
     
     // Properties
     var arrayModels = [Model]()
@@ -22,6 +26,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var falls = Model(name: "Falls", image: "8", id: "falls", description: "Seen one seen them all")
     var rocks = Model(name: "Rocks", image: "9", id: "rocks", description: "Stuck between")
     var market = Model(name: "Market", image: "10", id: "market", description: "This little piggy")
+    
+    // Properties
+    var descriptionVC:DescriptionViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +65,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
         // TODO: - Add a popup vc for a description
-        
+        titleText = arrayModels[indexPath.row].displayName!
+        descriptionText = arrayModels[indexPath.row].modelDescirption!
         
         // Return the cell
         return cell
@@ -78,13 +86,31 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.navigationController?.pushViewController(viewController!, animated: true)
         
     }
-
-}
-
-extension ViewController: DescriptionViewControllerprotocol {
     
-    func descriptionViewDismissed() {
-        <#code#>
+        
+
+        
+
+    
+    @IBAction func testTapped(_ sender: UIButton) {
+        
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "desc") as! DescriptionViewController
+        popOverVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+//        popOverVC.setPopup(withTitle: "Yes", withMessage: "test")
+        
+        present(popOverVC, animated: true)
+        
     }
     
-}
+    //===============
+    // MARK: Protocol
+    //===============
+    
+    func descriptionViewDismissed() {
+        print("okay")
+        
+    }
+    
+   
+} // End class
+

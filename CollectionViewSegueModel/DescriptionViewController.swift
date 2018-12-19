@@ -11,6 +11,8 @@ import UIKit
 protocol DescriptionViewControllerprotocol {
     
     func descriptionViewDismissed()
+    var titleText:String { get set }
+    var descriptionText:String {get set}
     
 }
 
@@ -62,6 +64,7 @@ class DescriptionViewController: UIViewController {
         // Fade in the labels
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
             
+            // Get the labels to appear
             self.titleLabel.alpha = 1
             self.descriptionText.alpha = 1
             

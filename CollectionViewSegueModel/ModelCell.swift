@@ -11,14 +11,9 @@ import UIKit
 class ModelCell: UICollectionViewCell {
     
     var desc:String?
+    var vc:DescriptionViewController?
     
     
-    @IBAction func descriptionTapped(_ sender: UIButton) {
-        
-        // Print the description
-        print(desc)
-        
-    }
     
     
 }
