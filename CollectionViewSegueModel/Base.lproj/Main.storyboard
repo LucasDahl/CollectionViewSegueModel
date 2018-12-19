@@ -57,7 +57,7 @@
                                                     </constraints>
                                                     <state key="normal" image="3dot"/>
                                                     <connections>
-                                                        <action selector="testTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABc-yg-Yb1"/>
+                                                        <action selector="desTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O42-mu-nuM"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -120,7 +120,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5e-tZ-Bop">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.49828381147540984" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWr-mz-crM">
                                 <rect key="frame" x="38" y="308" width="299" height="294"/>

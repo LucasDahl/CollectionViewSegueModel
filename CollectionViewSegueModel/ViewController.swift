@@ -29,12 +29,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Properties
     var descriptionVC:DescriptionViewController?
+    var t = ""
+    var d = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set up the array
         arrayModels += ([muir, muirTwo, feet, fruit, road, city, crowd, falls, rocks, market])
+        
+        descriptionVC = storyboard?.instantiateViewController(withIdentifier: "desc") as? DescriptionViewController
+        descriptionVC?.delegate = self
+        descriptionVC?.modalPresentationStyle = .overCurrentContext
         
     }
 
@@ -65,8 +71,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
         // TODO: - Add a popup vc for a description
-        titleText = arrayModels[indexPath.row].displayName!
-        descriptionText = arrayModels[indexPath.row].modelDescirption!
+        t = arrayModels[indexPath.row].displayName!
+        d = arrayModels[indexPath.row].modelDescirption!
         
         // Return the cell
         return cell
@@ -87,20 +93,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    func passData(title:String, description:String) {
         
-
-        
-
+        if descriptionVC != nil {
+            
+            present(descriptionVC!, animated: true) {
+                
+                self.descriptionVC?.setPopup(withTitle: title, withMessage: description)
+                
+            }
+            
+            
+        }
+    }
     
-    @IBAction func testTapped(_ sender: UIButton) {
         
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "desc") as! DescriptionViewController
-        popOverVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//        popOverVC.setPopup(withTitle: "Yes", withMessage: "test")
         
-        present(popOverVC, animated: true)
+    @IBAction func desTapped(_ sender: Any) {
+        
+        passData(title: t, description: d)
         
     }
+    
     
     //===============
     // MARK: Protocol

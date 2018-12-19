@@ -36,19 +36,19 @@ class DescriptionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         // Set the rounded corners for the dialogView
-        dialogView.layer.cornerRadius = 15
+        dialogView.layer.cornerRadius = 20
         
         // Set the alpha
-        dimView.alpha = 0
-        titleLabel.alpha = 0
-        descriptionText.alpha = 0
+        dimView.alpha = 1
+        titleLabel.alpha = 1
+        descriptionText.alpha = 1
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
         // Sets the dim view alpha back to one, by animating it in.
-        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             
             self.dimView.alpha = 1
             
