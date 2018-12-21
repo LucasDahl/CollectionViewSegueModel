@@ -37,9 +37,9 @@ class DescriptionViewController: UIViewController {
         dialogView.layer.cornerRadius = 20
         
         // Set the alpha
-        dimView.alpha = 1
-        titleLabel.alpha = 1
-        descriptionText.alpha = 1
+        dimView.alpha = 0
+        titleLabel.alpha = 0
+        descriptionText.alpha = 0
         
     }
     
@@ -60,7 +60,7 @@ class DescriptionViewController: UIViewController {
         descriptionText.text = withMessage
         
         // Fade in the labels
-        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             
             // Get the labels to appear
             self.titleLabel.alpha = 1
@@ -76,6 +76,8 @@ class DescriptionViewController: UIViewController {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             
             self.dimView.alpha = 0
+            self.titleLabel.alpha = 0
+            self.descriptionText.alpha = 0
             
         }) { (completed) in
             
@@ -93,5 +95,4 @@ class DescriptionViewController: UIViewController {
         
     }
     
- 
-}
+} // End class

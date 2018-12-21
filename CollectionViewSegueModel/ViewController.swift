@@ -92,7 +92,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    //==========================
+    //===========================
     // MARK: - Pass data to popup
     //===========================
     
@@ -128,6 +128,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func descriptionViewDismissed() {
         
+      
         
     }
     
