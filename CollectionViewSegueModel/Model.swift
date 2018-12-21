@@ -7,8 +7,8 @@
 //
 
 import Foundation
-//import UIKit
 
+// This should actualy be a struct to avoid memory issues.
 class Model {
     
     // Properties
