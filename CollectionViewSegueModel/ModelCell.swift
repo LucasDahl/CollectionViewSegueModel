@@ -13,6 +13,4 @@ class ModelCell: UICollectionViewCell {
     var desc:String?
     var vc:DescriptionViewController?
     
-    
-    
 }

@@ -11,8 +11,6 @@ import UIKit
 protocol DescriptionViewControllerprotocol {
     
     func descriptionViewDismissed()
-    var titleText:String { get set }
-    var descriptionText:String {get set}
     
 }
 

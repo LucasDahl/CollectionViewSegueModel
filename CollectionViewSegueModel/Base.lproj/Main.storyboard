@@ -56,9 +56,6 @@
                                                         <constraint firstAttribute="width" constant="21" id="njy-7g-Dec"/>
                                                     </constraints>
                                                     <state key="normal" image="3dot"/>
-                                                    <connections>
-                                                        <action selector="desTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O42-mu-nuM"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>

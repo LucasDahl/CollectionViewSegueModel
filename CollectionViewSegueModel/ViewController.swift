@@ -10,10 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, DescriptionViewControllerprotocol {
     
-    // Protocol Properties
-    var titleText: String = ""
-    var descriptionText: String = ""
-    
     // Properties
     var arrayModels = [Model]()
     var muir = Model(name: "Muir", image: "1", id: "muir", description: "Mountain")
@@ -29,8 +25,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Properties
     var descriptionVC:DescriptionViewController?
-    var t = ""
-    var d = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Set up the array
         arrayModels += ([muir, muirTwo, feet, fruit, road, city, crowd, falls, rocks, market])
         
+        // Set up the popup
         descriptionVC = storyboard?.instantiateViewController(withIdentifier: "desc") as? DescriptionViewController
         descriptionVC?.delegate = self
         descriptionVC?.modalPresentationStyle = .overCurrentContext
@@ -70,14 +65,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Gets the description from the model
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
-        // TODO: - Add a popup vc for a description
-        t = arrayModels[indexPath.row].displayName!
-        d = arrayModels[indexPath.row].modelDescirption!
+        // Make the button
+        let button = cell.viewWithTag(3) as! UIButton
+        
+        // Set the button properties
+        button.tag = indexPath.row
+        button.addTarget(self, action: #selector(self.dataToPass), for: .touchUpInside)
         
         // Return the cell
         return cell
         
     }
+    
     
     // Selected cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -93,6 +92,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    //==========================
+    // MARK: - Pass data to popup
+    //===========================
+    
     func passData(title:String, description:String) {
         
         if descriptionVC != nil {
@@ -107,11 +110,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    @objc func dataToPass(_ sender: UIButton) {
         
+        let title = arrayModels[sender.tag].displayName!
+        let desc = arrayModels[sender.tag].modelDescirption!
         
-    @IBAction func desTapped(_ sender: Any) {
+        passData(title: title, description: desc)
         
-        passData(title: t, description: d)
+        print(sender.tag)
         
     }
     
@@ -121,7 +127,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     //===============
     
     func descriptionViewDismissed() {
-        print("okay")
+        
         
     }
     
