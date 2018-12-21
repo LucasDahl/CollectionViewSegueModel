@@ -128,7 +128,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func descriptionViewDismissed() {
         
-      
+      // Could add other buttons that lock certain cells for parental controls.
         
     }
     
