@@ -65,7 +65,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Gets the description from the model
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
-        // Make the button
+        // Make the button (right now there is an issue where this will cause an error when trying to get the collectionView to reload)
         let button = cell.viewWithTag(3) as! UIButton
         
         // Set the button properties
