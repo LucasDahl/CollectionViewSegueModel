@@ -8,8 +8,7 @@
 
 import Foundation
 
-// This should actualy be a struct to avoid memory issues.
-class Model {
+struct Model {
     
     // Properties
     var displayName:String?
