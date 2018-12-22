@@ -14,6 +14,7 @@
 		951BD8F521C5B02F003790FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951BD8F421C5B02F003790FF /* Assets.xcassets */; };
 		951BD8F821C5B02F003790FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BD8F621C5B02F003790FF /* LaunchScreen.storyboard */; };
 		951FDF0121C75BA60021F71C /* ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951FDF0021C75BA60021F71C /* ModelCell.swift */; };
+		9536388121CDF53F00C619E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536388021CDF53F00C619E7 /* SettingsViewController.swift */; };
 		955881C121C614DB00726796 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955881C021C614DB00726796 /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		951BD8F721C5B02F003790FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		951BD8F921C5B02F003790FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		951FDF0021C75BA60021F71C /* ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCell.swift; sourceTree = "<group>"; };
+		9536388021CDF53F00C619E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		955881C021C614DB00726796 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 			children = (
 				951BD8ED21C5B02E003790FF /* AppDelegate.swift */,
 				951BD8EF21C5B02E003790FF /* ViewController.swift */,
+				9536388021CDF53F00C619E7 /* SettingsViewController.swift */,
 				9504C1D821C851FD00A4AC40 /* DescriptionViewController.swift */,
 				951FDF0021C75BA60021F71C /* ModelCell.swift */,
 				955881C021C614DB00726796 /* Model.swift */,
@@ -149,6 +152,7 @@
 				951BD8EE21C5B02E003790FF /* AppDelegate.swift in Sources */,
 				9504C1D921C851FD00A4AC40 /* DescriptionViewController.swift in Sources */,
 				951FDF0121C75BA60021F71C /* ModelCell.swift in Sources */,
+				9536388121CDF53F00C619E7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, DescriptionViewControllerprotocol {
     
-    // Properties
+    // Properties - These should be a struct, not a class
     var arrayModels = [Model]()
     var muir = Model(name: "Muir", image: "1", id: "muir", description: "Mountain")
     var muirTwo = Model(name: "MuirTwo", image: "2", id: "muirTwo", description: "YASS QUEEN")
@@ -25,7 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Properties
     var descriptionVC:DescriptionViewController?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
