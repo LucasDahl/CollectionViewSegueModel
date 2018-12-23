@@ -68,7 +68,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
         // Make the button
-        let button = UIButton(frame: CGRect(x:0, y:20, width:40,height:40))
+        let button = UIButton(frame: CGRect(x: 154, y: 149, width:21,height:21))
         
         // Setup the button properties
         button.setImage(UIImage(named: "3dot"), for: UIControl.State.normal)
