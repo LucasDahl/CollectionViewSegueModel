@@ -38,6 +38,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         descriptionVC?.modalPresentationStyle = .overCurrentContext
         
     }
+    
+    //=============================
+    // MARK: CollectionView methods
+    //=============================
 
     
     // Number of cells
@@ -67,7 +71,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Gets the description from the model
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
-        // Make the button
+        // Make the button progrmatically
         let button = UIButton(frame: CGRect(x: 154, y: 149, width:21,height:21))
         
         // Setup the button properties
@@ -99,6 +103,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    
     //===========================
     // MARK: - Pass data to popup
     //===========================
@@ -126,7 +131,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         passData(title: title, description: desc)
         
-        print(sender.tag)
+        // For testing purposes
+        //print(sender.tag)
         
     }
     
