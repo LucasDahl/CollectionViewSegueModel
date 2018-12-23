@@ -56,6 +56,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Set the imageView
         let imageView = cell.viewWithTag(1) as! UIImageView
+        
+        // Set the image
         imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage)
         
         // Set the label
@@ -65,13 +67,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Gets the description from the model
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
-        // Make the button (right now there is an issue where this will cause an error when trying to get the collectionView to reload)
-        // Needs a check
-        let button = cell.viewWithTag(3) as! UIButton
+        // Make the button
+        let button = UIButton(frame: CGRect(x:0, y:20, width:40,height:40))
         
-        // Set the button properties
-        button.tag = indexPath.row
-        button.addTarget(self, action: #selector(self.dataToPass), for: .touchUpInside)
+        // Setup the button properties
+        button.setImage(UIImage(named: "3dot"), for: UIControl.State.normal)
+        
+        // Add the method for the button
+        button.addTarget(self, action: #selector(dataToPass), for: UIControl.Event.touchUpInside)
+        
+        // add the button to the cell
+        cell.addSubview(button)
         
         // Return the cell
         return cell
@@ -97,6 +103,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Pass data to popup
     //===========================
     
+    // present the data to the description view controller
     func passData(title:String, description:String) {
         
         if descriptionVC != nil {
@@ -111,6 +118,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    // The method for the button to gather the data for the cell
     @objc func dataToPass(_ sender: UIButton) {
         
         let title = arrayModels[sender.tag].displayName

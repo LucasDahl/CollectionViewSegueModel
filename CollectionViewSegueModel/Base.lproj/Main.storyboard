@@ -43,34 +43,23 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chB-bh-kyj">
-                                                    <rect key="frame" x="10" y="149" width="144" height="21"/>
+                                                    <rect key="frame" x="10" y="149" width="41.666666666666664" height="21"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="button" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acd-34-Eou">
-                                                    <rect key="frame" x="154" y="149" width="21" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="hYh-ZB-EYL"/>
-                                                        <constraint firstAttribute="width" constant="21" id="njy-7g-Dec"/>
-                                                    </constraints>
-                                                    <state key="normal" image="3dot"/>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Ijl-uG-a79" firstAttribute="leading" secondItem="s55-zd-gZz" secondAttribute="leading" id="7k4-M5-o46"/>
-                                            <constraint firstAttribute="trailing" secondItem="acd-34-Eou" secondAttribute="trailing" id="Fhy-7D-HAC"/>
                                             <constraint firstAttribute="bottom" secondItem="Ijl-uG-a79" secondAttribute="bottom" id="KaQ-dt-qUO"/>
                                             <constraint firstItem="chB-bh-kyj" firstAttribute="leading" secondItem="s55-zd-gZz" secondAttribute="leading" constant="10" id="cAY-yc-6gi"/>
                                             <constraint firstAttribute="bottom" secondItem="chB-bh-kyj" secondAttribute="bottom" constant="5" id="eXE-pG-fI2"/>
                                             <constraint firstItem="chB-bh-kyj" firstAttribute="top" secondItem="s55-zd-gZz" secondAttribute="top" constant="149" id="gJv-GU-x8y"/>
-                                            <constraint firstItem="acd-34-Eou" firstAttribute="top" secondItem="s55-zd-gZz" secondAttribute="top" constant="149" id="gLN-ml-7co"/>
-                                            <constraint firstItem="acd-34-Eou" firstAttribute="leading" secondItem="chB-bh-kyj" secondAttribute="trailing" id="hlr-eI-hIS"/>
                                             <constraint firstAttribute="trailing" secondItem="Ijl-uG-a79" secondAttribute="trailing" id="oNU-5n-QX7"/>
-                                            <constraint firstAttribute="bottom" secondItem="acd-34-Eou" secondAttribute="bottom" constant="5" id="wc8-fF-B45"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="chB-bh-kyj" secondAttribute="trailing" symbolic="YES" id="tpv-gg-GIN"/>
                                             <constraint firstItem="Ijl-uG-a79" firstAttribute="top" secondItem="s55-zd-gZz" secondAttribute="top" id="zIx-IM-6yM"/>
                                         </constraints>
                                     </collectionViewCell>
@@ -541,7 +530,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3dot" width="37.5" height="37.5"/>
         <image name="background" width="640" height="1136"/>
         <image name="settings" width="37.5" height="37.5"/>
     </resources>
