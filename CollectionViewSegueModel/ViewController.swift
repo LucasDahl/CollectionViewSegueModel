@@ -56,17 +56,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Set the imageView
         let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage!)
+        imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage)
         
         // Set the label
         let textLabel = cell.viewWithTag(2) as! UILabel
-        textLabel.text = arrayModels[indexPath.row].displayName!
+        textLabel.text = arrayModels[indexPath.row].displayName
         
         // Gets the description from the model
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
         // Make the button (right now there is an issue where this will cause an error when trying to get the collectionView to reload)
-        // Needs a guard statment
+        // Needs a check
         let button = cell.viewWithTag(3) as! UIButton
         
         // Set the button properties
@@ -86,7 +86,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let name = arrayModels[indexPath.row].idVc
         
         // Get the ViewController
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name!)
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
         
         // push the viewContoller
         self.navigationController?.pushViewController(viewController!, animated: true)
@@ -113,8 +113,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @objc func dataToPass(_ sender: UIButton) {
         
-        guard let title = arrayModels[sender.tag].displayName else {return}
-        guard let desc = arrayModels[sender.tag].modelDescirption else {return}
+        let title = arrayModels[sender.tag].displayName
+        let desc = arrayModels[sender.tag].modelDescirption
         
         passData(title: title, description: desc)
         
