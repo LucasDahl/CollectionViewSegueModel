@@ -66,6 +66,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.desc = arrayModels[indexPath.row].modelDescirption
         
         // Make the button (right now there is an issue where this will cause an error when trying to get the collectionView to reload)
+        // Needs a guard statment
         let button = cell.viewWithTag(3) as! UIButton
         
         // Set the button properties
@@ -112,8 +113,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @objc func dataToPass(_ sender: UIButton) {
         
-        let title = arrayModels[sender.tag].displayName!
-        let desc = arrayModels[sender.tag].modelDescirption!
+        guard let title = arrayModels[sender.tag].displayName else {return}
+        guard let desc = arrayModels[sender.tag].modelDescirption else {return}
         
         passData(title: title, description: desc)
         
