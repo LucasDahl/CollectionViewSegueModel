@@ -10,6 +10,7 @@ import UIKit
 
 class ModelCell: UICollectionViewCell {
     
+    // Properties
     var desc:String?
     var vc:DescriptionViewController?
     

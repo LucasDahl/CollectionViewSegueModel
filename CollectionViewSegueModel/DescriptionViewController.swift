@@ -27,8 +27,6 @@ class DescriptionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,6 +52,7 @@ class DescriptionViewController: UIViewController {
         
     }
     
+    // Set the popip
     func setPopup(withTitle:String, withMessage:String) {
         
         titleLabel.text = withTitle

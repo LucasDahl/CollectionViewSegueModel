@@ -12,11 +12,10 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+   
     }
     
-    
+    // The button to go to the settings
     @IBAction func goToSettings(_ sender: UIButton) {
         
         // Make the alert
@@ -51,6 +50,4 @@ class SettingsViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
         
     }
-    
-
 }
