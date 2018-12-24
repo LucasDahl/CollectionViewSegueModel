@@ -77,7 +77,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Setup the button properties
         button.setImage(UIImage(named: "3dot"), for: UIControl.State.normal)
         
-        // Get the tag so the button gets the data for the selected cell
+        // Get the tag so the button gets the data for the selected cell(this is needed to allow the correct data pass to the popup)
         button.tag = indexPath.row
         
         // Add the method for the button
