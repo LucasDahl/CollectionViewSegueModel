@@ -62,7 +62,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let imageView = cell.viewWithTag(1) as! UIImageView
         
         // Set the image
-        imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage)
+        imageView.image = UIImage(named: arrayModels[indexPath.row].displayImage!)
         
         // Set the label
         let textLabel = cell.viewWithTag(2) as! UILabel
@@ -76,6 +76,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         // Setup the button properties
         button.setImage(UIImage(named: "3dot"), for: UIControl.State.normal)
+        
+        // Get the tag so the button gets the data for the selected cell
+        button.tag = indexPath.row
         
         // Add the method for the button
         button.addTarget(self, action: #selector(dataToPass), for: UIControl.Event.touchUpInside)
@@ -96,7 +99,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let name = arrayModels[indexPath.row].idVc
         
         // Get the ViewController
-        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name!)
         
         // push the viewContoller
         self.navigationController?.pushViewController(viewController!, animated: true)
@@ -129,10 +132,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let title = arrayModels[sender.tag].displayName
         let desc = arrayModels[sender.tag].modelDescirption
         
-        passData(title: title, description: desc)
+        passData(title: title!, description: desc!)
         
-        // For testing purposes
-        //print(sender.tag)
+        // For testing
+        print(sender.tag)
         
     }
     
