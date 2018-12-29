@@ -10,7 +10,7 @@ import UIKit
 
 protocol DescriptionViewControllerprotocol {
     
-    func descriptionViewDismissed()
+    func passData(title:String, description:String)
     
 }
 
@@ -87,8 +87,6 @@ class DescriptionViewController: UIViewController {
                 self.descriptionText.text = ""
                 
             })
-            
-            self.delegate?.descriptionViewDismissed()
             
         }
         

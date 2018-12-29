@@ -139,17 +139,5 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
-    
-    //===============
-    // MARK: Protocol
-    //===============
-    
-    func descriptionViewDismissed() {
-        
-      // Could add other buttons that lock certain cells for parental controls.
-        
-    }
-    
-   
 } // End class
 
