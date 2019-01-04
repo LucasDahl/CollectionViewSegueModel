@@ -46,7 +46,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // Number of cells
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        // Return the number of cells that are in the array
         return arrayModels.count
+        
     }
     
     // Cells
