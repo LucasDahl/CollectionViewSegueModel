@@ -120,7 +120,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Check if the descriptionVc is nil
         if descriptionVC != nil {
             
-            // Present the descriptionVc
+            // Present the descriptionVC
             present(descriptionVC!, animated: true) {
                 
                 // Set the descriptionVC popup properties
