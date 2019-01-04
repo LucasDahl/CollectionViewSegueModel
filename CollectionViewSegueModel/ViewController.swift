@@ -117,10 +117,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // present the data to the description view controller
     func passData(title:String, description:String) {
         
+        // Check if the descriptionVc is nil
         if descriptionVC != nil {
             
+            // Present the descriptionVc
             present(descriptionVC!, animated: true) {
                 
+                // Set the descriptionVC popup properties
                 self.descriptionVC?.setPopup(withTitle: title, withMessage: description)
                 
             }
