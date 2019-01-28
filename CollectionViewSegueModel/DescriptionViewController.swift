@@ -52,7 +52,7 @@ class DescriptionViewController: UIViewController {
         
     }
     
-    // Set the popip
+    // Set the popup
     func setPopup(withTitle:String, withMessage:String) {
         
         titleLabel.text = withTitle

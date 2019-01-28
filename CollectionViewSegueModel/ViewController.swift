@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, DescriptionViewControllerprotocol {
     
+    // MARK - Important, this cause a retain cycle.
     // Model objects
     var arrayModels = [Model]()
     var muir = Model(name: "Muir", image: "1", id: "muir", description: "Mountain")
